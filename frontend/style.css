@@ -1,0 +1,144 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f3f6fb, #f9fcff);
+  color: #333;
+  padding: 20px;
+}
+
+/* Header */
+.main-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo h1 {
+  font-size: 28px;
+  color: #d32f2f;
+}
+
+.emoji {
+  font-size: 36px;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Upload section */
+.upload-box {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.upload-label {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+#video-upload {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Summary panel */
+.summary-panel {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.summary-panel h2 {
+  color: #d32f2f;
+  margin-bottom: 15px;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.summary-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+}
+
+.summary-item span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.summary-item p {
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Grid 4 cột hiển thị kết quả */
+.violation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.violation-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.violation-card video {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.violation-card .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #d32f2f;
+  margin-top: 8px;
+}
+
+.violation-card .value {
+  font-size: 15px;
+  color: #333;
+  margin-top: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  color: #888;
+}

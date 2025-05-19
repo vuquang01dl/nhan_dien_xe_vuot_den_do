@@ -1,0 +1,21 @@
+traffic_violation_ai/
+│
+├── backend/                     # API xử lý video bằng AI
+│   ├── app.py                   # File Python chính (Flask hoặc FastAPI)
+│   ├── models/                  # Chứa các model AI
+│   │   ├── loaixe.pt
+│   │   ├── LP_detector_nano_61.pt
+│   │   └── LP_ocr.pt
+│   ├── services/                # Hàm xử lý video bằng AI
+│   │   └── process_video.py
+│   ├── utils/                   # Hàm tiện ích như sắp xếp OCR
+│   │   └── ocr_sort.py
+│   └── results/                 # Lưu kết quả ảnh và log
+│
+├── frontend/                    # Giao diện web thuần HTML/CSS/JS
+│   ├── index.html               # Trang chính người dùng
+│   ├── style.css                # CSS cơ bản
+│   ├── script.js                # JavaScript xử lý upload và fetch API
+│   └── uploads/                 # Tạm thời lưu video đã tải lên
+│
+└── README.md                    # Ghi chú chạy hệ thống

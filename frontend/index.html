@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛑 Hệ thống Giám Sát Giao Thông AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <span class="emoji">🚓</span>
+      <h1>Hệ Thống Giám Sát Giao Thông Thông Minh</h1>
+    </div>
+    <p class="subheading">Nhận diện phương tiện vượt đèn đỏ, biển số, loại xe bằng trí tuệ nhân tạo</p>
+  </header>
+
+  <main>
+    <section class="upload-box">
+      <label for="video-upload" class="upload-label">🎥 Chọn hoặc kéo thả video vi phạm:</label>
+      <input type="file" id="video-upload" multiple accept="video/*">
+    </section>
+
+    <section class="summary-panel">
+      <h2>Tổng quan vi phạm</h2>
+      <div class="summary">
+        <div class="summary-item">
+          <span id="total-videos">0</span>
+          <p>Video đã xử lý</p>
+        </div>
+        <div class="summary-item">
+          <span id="total-violations">0</span>
+          <p>Phát hiện vi phạm</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="violation-grid" id="video-results">
+      <!-- Mỗi dòng gồm 4 ô: video | biển số | loại vi phạm | thời gian -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Hệ thống AI phát hiện vi phạm giao thông | Phát triển bởi QH Tech</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
